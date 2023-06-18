@@ -23,4 +23,8 @@ public class UserService {
 		Optional<User> obj = ur.findById(id);
 		return obj.get();
 	}
+	
+	public User insert(User obj) {
+		return ur.save(obj);
+	}
 }
